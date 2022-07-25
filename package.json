@@ -69,6 +69,7 @@
     "node": ">= 14"
   },
   "dependencies": {
-    "axios": "0.27.2"
+    "axios": "0.27.2",
+    "object-fields": "3.0.1"
   }
 }

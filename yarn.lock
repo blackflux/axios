@@ -2760,6 +2760,13 @@ object-assign@^4.0.1, object-assign@^4.1.0:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
 
+object-fields@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/object-fields/-/object-fields-3.0.1.tgz#ed34371e4060b283c831bf0033b4f64fc96e6aa7"
+  integrity sha512-K51izy+S00gEdzWjxZLkuTdo2dwcg/IJorSbhi1XPHOVERhsNmi60KH2DckXQWlX+aA1VJApxscxIl/0ak7HhA==
+  dependencies:
+    object-scan "17.0.0"
+
 object-inspect@^1.12.0, object-inspect@^1.9.0:
   version "1.12.2"
   resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.12.2.tgz#c0641f26394532f28ab8d796ab954e43c009a8ea"
