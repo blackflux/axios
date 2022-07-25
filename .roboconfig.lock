@@ -1,0 +1,22 @@
+{
+  "@blackflux/robo-config-plugin": [
+    ".c8rc.json",
+    ".circleci/config.yml",
+    ".dependabot/config.yml",
+    ".editorconfig",
+    ".eslintrc.json",
+    ".gally.json",
+    ".gitignore",
+    ".idea/axios.iml",
+    ".mocharc.yml",
+    ".npmignore",
+    ".releaserc.json",
+    "LICENSE",
+    "README.md",
+    "gardener.js",
+    "package.json",
+    "src/index.js",
+    "test/hot.js",
+    "test/index.spec.js"
+  ]
+}

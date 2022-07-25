@@ -1,0 +1,17 @@
+{
+  "@blackflux/robo-config-plugin": {
+    "tasks": [
+      "assorted/@npm-opensource"
+    ],
+    "variables": {
+      "repoKey": "blackflux/axios",
+      "packageName": "@blackflux/axios",
+      "projectName": "axios",
+      "owner": "simlu",
+      "nodeVersion": "12",
+      "ownerName": "Lukas Siemon",
+      "mergeBot": "MrsFlux",
+      "nccEnabled": false
+    }
+  }
+}
