@@ -34,6 +34,7 @@
     "eslint-plugin-markdown": "3.0.0",
     "eslint-plugin-mocha": "10.1.0",
     "js-gardener": "3.0.5",
+    "lambda-monitor-logger": "4.0.0",
     "node-tdd": "3.4.2",
     "smart-fs": "3.0.1"
   },
@@ -69,6 +70,7 @@
     "node": ">= 14"
   },
   "dependencies": {
-    "axios": "0.27.2"
+    "axios": "0.27.2",
+    "object-fields": "3.0.1"
   }
 }
