@@ -1,15 +1,12 @@
 import axios from 'axios';
-import { Retainer } from 'object-fields';
+import wrap from './util/wrap.js';
 
-export default async (...kwargs) => {
-  try {
-    return await axios(...kwargs);
-  } catch (e) {
-    Retainer([
-      'code',
-      'config.{headers,method,url,data}',
-      'response.{headers,status,statusText,data}'
-    ])(e);
-    throw e;
-  }
-};
+const axiosWrapped = Object.entries(axios)
+  .map(([k, v]) => [k, wrap(v)])
+  .reduce((p, [k, v]) => {
+    // eslint-disable-next-line no-param-reassign
+    p[k] = v;
+    return p;
+  }, wrap(axios));
+
+export default axiosWrapped;

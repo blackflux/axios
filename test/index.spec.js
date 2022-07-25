@@ -1,6 +1,7 @@
 import { expect } from 'chai';
 import { describe } from 'node-tdd';
 import { abbrev } from 'lambda-monitor-logger';
+import axios from 'axios';
 import index from '../src/index.js';
 
 describe('Testing Package', {
@@ -9,7 +10,11 @@ describe('Testing Package', {
 }, () => {
   it('Testing export', () => {
     expect(typeof index).to.equal('function');
-    expect(Object.entries(index)).to.deep.equal([]);
+    const normalize = (obj) => ({
+      type: typeof obj,
+      children: Object.entries(obj).map(([k, v]) => [k, typeof v])
+    });
+    expect(normalize(index)).to.deep.equal(normalize(axios));
   });
 
   it('Testing request', async () => {
