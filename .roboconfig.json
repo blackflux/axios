@@ -8,7 +8,7 @@
       "packageName": "@blackflux/axios",
       "projectName": "axios",
       "owner": "simlu",
-      "nodeVersion": "12",
+      "nodeVersion": "14",
       "ownerName": "Lukas Siemon",
       "mergeBot": "MrsFlux",
       "nccEnabled": false
