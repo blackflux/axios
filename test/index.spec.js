@@ -1,5 +1,6 @@
 import { expect } from 'chai';
 import { describe } from 'node-tdd';
+import { abbrev } from 'lambda-monitor-logger';
 import index from '../src/index.js';
 
 describe('Testing Package', {
@@ -30,5 +31,10 @@ describe('Testing Package', {
       },
       code: 'ERR_BAD_REQUEST'
     });
+    expect(abbrev(r)).to.deep.equal(
+      '{ [AxiosError] code: \'ERR_BAD_REQUEST\',config:{ headers: { Accept: \'application/json,'
+      + ' text/plain, */*\', \'User-Agent\': \'axios/0.27.2\' },url: \'https://google.com/unknown\',method:'
+      + ' \'head\',data: undefined },response: { status: 404, statusText: null, headers: {}, data: \'\' } }'
+    );
   });
 });
