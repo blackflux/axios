@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://github.com/blackflux/axios.git"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "author": "Lukas Siemon",
   "license": "MIT",
   "licenses": [
