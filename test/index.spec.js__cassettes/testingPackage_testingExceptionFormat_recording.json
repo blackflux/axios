@@ -1,0 +1,12 @@
+[
+  {
+    "scope": "https://google.com:443",
+    "method": "HEAD",
+    "path": "/unknown",
+    "body": "",
+    "status": 404,
+    "response": "",
+    "reqheaders": {},
+    "responseIsBinary": false
+  }
+]

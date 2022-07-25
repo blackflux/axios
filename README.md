@@ -2,3 +2,6 @@
 [![NPM](https://img.shields.io/npm/v/@blackflux/axios.svg)](https://www.npmjs.com/package/@blackflux/axios)
 [![Downloads](https://img.shields.io/npm/dt/@blackflux/axios.svg)](https://www.npmjs.com/package/@blackflux/axios)
 # Axios Wrapper
+
+This library does the following:
+- Redacts verbose information from error AxiosError
