@@ -5,7 +5,7 @@ const axiosWrapped = Object.entries(axios)
   .map(([k, v]) => [k, wrap(v)])
   .reduce((p, [k, v]) => {
     // eslint-disable-next-line no-param-reassign
-    p[k] = v;
+    p[k] = wrap(v);
     return p;
   }, wrap(axios));
 
