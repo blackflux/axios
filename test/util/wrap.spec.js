@@ -17,6 +17,11 @@ describe('Testing wrap', () => {
     expect(e.message).to.equal('some-error');
   });
 
+  it('Testing function returning function', async ({ capture }) => {
+    const wrapped = wrap(() => () => 'ok');
+    expect(wrapped()()).to.equal('ok');
+  });
+
   it('Testing boring function', async ({ capture }) => {
     const wrapped = wrap(() => 'ok');
     expect(wrapped()).to.equal('ok');
