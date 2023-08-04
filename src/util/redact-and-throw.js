@@ -10,6 +10,7 @@ const retainer = Retainer([
 export default (e) => {
   if (e instanceof axios.AxiosError) {
     retainer(e);
+    delete e.stack;
   }
   throw e;
 };

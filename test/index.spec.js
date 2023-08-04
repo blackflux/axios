@@ -30,16 +30,21 @@ describe('Testing Package', {
       name: 'Error',
       status: 404,
       config: {
-        headers: { Accept: 'application/json, text/plain, */*', 'User-Agent': 'axios/0.27.2' },
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Accept-Encoding': 'gzip, compress, deflate, br',
+          'User-Agent': 'axios/1.4.0'
+        },
         url: 'https://google.com/unknown',
         method: 'head'
       },
       code: 'ERR_BAD_REQUEST'
     });
     expect(abbrev(r)).to.deep.equal(
-      '{ [AxiosError] code: \'ERR_BAD_REQUEST\',config:{ headers: { Accept: \'application/json,'
-      + ' text/plain, */*\', \'User-Agent\': \'axios/0.27.2\' },url: \'https://google.com/unknown\',method:'
-      + ' \'head\',data: undefined },response: { status: 404, statusText: null, headers: {}, data: \'\' } }'
+      "{ [AxiosError] code: 'ERR_BAD_REQUEST',config:{ headers:AxiosHeaders { Accept: 'application/json, "
+      + "text/plain, */*','User-Agent': 'axios/1.4.0','Accept-Encoding': 'gzip, compress, deflate, br' },url: "
+      + "'https://google.com/unknown',method: 'head',data: undefined },response: { status: 404, "
+      + "statusText: null, headers: AxiosHeaders {}, data: '' } }"
     );
   });
 });
