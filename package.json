@@ -23,8 +23,8 @@
     "@babel/core": "7.22.9",
     "@babel/eslint-parser": "7.22.9",
     "@babel/register": "7.22.5",
-    "@blackflux/eslint-plugin-rules": "2.2.0",
-    "@blackflux/robo-config-plugin": "9.1.7",
+    "@blackflux/eslint-plugin-rules": "3.0.0",
+    "@blackflux/robo-config-plugin": "9.1.9",
     "c8": "8.0.1",
     "chai": "4.3.7",
     "eslint": "8.46.0",
@@ -33,10 +33,10 @@
     "eslint-plugin-json": "3.1.0",
     "eslint-plugin-markdown": "3.0.1",
     "eslint-plugin-mocha": "10.1.0",
-    "js-gardener": "5.0.0",
-    "lambda-monitor-logger": "4.0.0",
-    "node-tdd": "3.5.4",
-    "smart-fs": "3.0.2"
+    "js-gardener": "5.0.1",
+    "lambda-monitor-logger": "5.0.0",
+    "node-tdd": "4.0.0",
+    "smart-fs": "4.0.0"
   },
   "description": "Axios Wrapper",
   "keywords": [
@@ -67,7 +67,7 @@
     "url": "https://github.com/blackflux/axios/issues"
   },
   "engines": {
-    "node": ">= 14"
+    "node": ">= 16"
   },
   "dependencies": {
     "axios": "1.4.0",
