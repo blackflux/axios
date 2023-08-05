@@ -23,8 +23,8 @@
     "@babel/core": "7.22.9",
     "@babel/eslint-parser": "7.22.9",
     "@babel/register": "7.22.5",
-    "@blackflux/eslint-plugin-rules": "3.0.0",
-    "@blackflux/robo-config-plugin": "9.1.9",
+    "@blackflux/eslint-plugin-rules": "3.0.1",
+    "@blackflux/robo-config-plugin": "9.1.10",
     "c8": "8.0.1",
     "chai": "4.3.7",
     "eslint": "8.46.0",
@@ -34,9 +34,9 @@
     "eslint-plugin-markdown": "3.0.1",
     "eslint-plugin-mocha": "10.1.0",
     "js-gardener": "5.0.1",
-    "lambda-monitor-logger": "5.0.0",
+    "lambda-monitor-logger": "5.0.1",
     "node-tdd": "4.0.0",
-    "smart-fs": "4.0.0"
+    "smart-fs": "4.0.1"
   },
   "description": "Axios Wrapper",
   "keywords": [
@@ -71,6 +71,6 @@
   },
   "dependencies": {
     "axios": "1.4.0",
-    "object-fields": "3.0.1"
+    "object-fields": "4.0.0"
   }
 }
