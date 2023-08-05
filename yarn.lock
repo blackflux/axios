@@ -223,15 +223,15 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@blackflux/eslint-plugin-rules@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-3.0.0.tgz#f07e6d1b3c7fef59c65c9f5d738d49a0d6cb2e31"
-  integrity sha512-gbYlG97hTvyuHrSNpcTQMdQ0RwwQsHcmQQrK5nO00ncinKuOSHk/G9zx3JW3fqXnAyShlvvjFzjSLSsTduvOwA==
+"@blackflux/eslint-plugin-rules@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@blackflux/eslint-plugin-rules/-/eslint-plugin-rules-3.0.1.tgz#7c15f322b62f412fa4de6ef69b0003800e1eb4e2"
+  integrity sha512-HKMFR4Xu11lhatDKFkkbctGjtjB24y6XBuIC+dOyFyfSUOuRWXZeae+0mW9lrZ+kS5to/96EASqxozVsErtuWg==
 
-"@blackflux/robo-config-plugin@9.1.9":
-  version "9.1.9"
-  resolved "https://registry.yarnpkg.com/@blackflux/robo-config-plugin/-/robo-config-plugin-9.1.9.tgz#944d727bc3561797b2e84b0d3b964a5b49b63205"
-  integrity sha512-5vTRpQBt6Gybdk+8o2443y7wCLizrbBVgso9MuiD6qlBCCyKOBWAZlfCTsLfZacpmzxdVgXgds86WMgsml956g==
+"@blackflux/robo-config-plugin@9.1.10":
+  version "9.1.10"
+  resolved "https://registry.yarnpkg.com/@blackflux/robo-config-plugin/-/robo-config-plugin-9.1.10.tgz#989d3700877aef7cdc8fc449a48c2f8c4ee4d804"
+  integrity sha512-RUIPtAOcFrDQpRt4a635/IjDH5sXadepSSSkKeMdt2xWXe9OP9WXTxxnLLQ3mWMr6dAVAD47J/95yq12S5ez9g==
   dependencies:
     smart-fs "4.0.0"
 
@@ -392,14 +392,14 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
-"@sideway/address@^4.1.0":
+"@sideway/address@^4.1.0", "@sideway/address@^4.1.3":
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
   integrity sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@sideway/formula@^3.0.0":
+"@sideway/formula@^3.0.0", "@sideway/formula@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.1.tgz#80fcbcbaf7ce031e0ef2dd29b1bfc7c3f583611f"
   integrity sha512-/poHZJJVjx3L+zVD6g9KgHfYnb443oi7wLu/XKojDviHy6HOEOA6z1Trk5aR1dGcmPenJEgb2sK2I80LeS3MIg==
@@ -2534,6 +2534,13 @@ joi-strict@2.0.1:
   dependencies:
     joi "17.4.2"
 
+joi-strict@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/joi-strict/-/joi-strict-3.0.0.tgz#fb0b60ed1940063d5b2908c8a77989a14de53908"
+  integrity sha512-/kfQQ7CThuVSS6COasbuz59qcjFLickLt4wJ6FBW6qlieR6JPrSHk6wpsMebqRs+sKjDMGBUUmuObXcdhRUK0A==
+  dependencies:
+    joi "17.9.2"
+
 joi@17.4.2:
   version "17.4.2"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.4.2.tgz#02f4eb5cf88e515e614830239379dcbbe28ce7f7"
@@ -2543,6 +2550,17 @@ joi@17.4.2:
     "@hapi/topo" "^5.0.0"
     "@sideway/address" "^4.1.0"
     "@sideway/formula" "^3.0.0"
+    "@sideway/pinpoint" "^2.0.0"
+
+joi@17.9.2:
+  version "17.9.2"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.9.2.tgz#8b2e4724188369f55451aebd1d0b1d9482470690"
+  integrity sha512-Itk/r+V4Dx0V3c7RLFdRh12IOjySm2/WGPMubBT92cQvRfYZhPM2W0hZlctjj72iES8jsRCwp7S/cRmWBnJ4nw==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/topo" "^5.0.0"
+    "@sideway/address" "^4.1.3"
+    "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
 js-gardener@5.0.1:
@@ -2665,12 +2683,12 @@ kind-of@^6.0.2, kind-of@^6.0.3:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-lambda-monitor-logger@5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/lambda-monitor-logger/-/lambda-monitor-logger-5.0.0.tgz#d8586c266f9e5c266d98be639ae88c1219554c21"
-  integrity sha512-0tl+VcL18Eq+JfT8QVeEg6nWyqhbfWCOXLMhBfmX4CsZ1/mMqr7YjHDW83tcGLgDD482iQXYIY8HwDfsBwObsQ==
+lambda-monitor-logger@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/lambda-monitor-logger/-/lambda-monitor-logger-5.0.1.tgz#fd13d14ca1ff6f29f7427e56f241272cc97f66ea"
+  integrity sha512-DzdP2j3/i8lII3MsW5HqkgFE0EkqGCY9Kk16XdV8qOmM/hldVpACOEGkOn92GEpXAGpEpfjqPywHUfcmFnyzfg==
   dependencies:
-    joi-strict "2.0.1"
+    joi-strict "3.0.0"
 
 latest-version@^5.1.0:
   version "5.1.0"
@@ -3186,12 +3204,12 @@ object-assign@^4.1.0:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
   integrity sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==
 
-object-fields@3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/object-fields/-/object-fields-3.0.1.tgz#ed34371e4060b283c831bf0033b4f64fc96e6aa7"
-  integrity sha512-K51izy+S00gEdzWjxZLkuTdo2dwcg/IJorSbhi1XPHOVERhsNmi60KH2DckXQWlX+aA1VJApxscxIl/0ak7HhA==
+object-fields@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/object-fields/-/object-fields-4.0.0.tgz#f6e921e89216778245eac50010468a28c312e8f7"
+  integrity sha512-nmu97d/JpeRb6cvOwxQ6t0XQsAV5CvFE+7vCEMVmwbFbPJy+1tOBLBY6JGn94CYSPfeFlw2PnxYo7XYLe9WlYg==
   dependencies:
-    object-scan "17.0.0"
+    object-scan "19.0.0"
 
 object-inspect@^1.12.3, object-inspect@^1.9.0:
   version "1.12.3"
@@ -3209,6 +3227,13 @@ object-lib@3.0.1:
   integrity sha512-sBkvjG/GOS7xaYR6QRBYys73ntMFcegtOZG18GvMRbkZonRu35QSLW6ZvXxmrzy30AdrT2SX6istZPVo7p7YvQ==
   dependencies:
     object-scan "17.0.0"
+
+object-lib@4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/object-lib/-/object-lib-4.0.0.tgz#bd15369919752714e72349e120059347aa460d75"
+  integrity sha512-EKLQgPA6FbBlCE9M5ESbcSOUNafpRwhOMKcBEvrd6Kf3uc2QI1tQhaCbgqfQduL9VQ2tfpI8Hr2HNLOtDczeKQ==
+  dependencies:
+    object-scan "19.0.0"
 
 object-scan@17.0.0:
   version "17.0.0"
@@ -3969,6 +3994,20 @@ smart-fs@4.0.0:
     lodash.clonedeep "4.5.0"
     lodash.isequal "4.5.0"
     object-lib "3.0.1"
+    xml-js "1.6.11"
+    yaml-boost "2.0.1"
+
+smart-fs@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/smart-fs/-/smart-fs-4.0.1.tgz#d8ba3dc201e7e8446a1eb0a0166d3505f0e6bcdc"
+  integrity sha512-64sLcOMS7OKKrdOR5Gi9viIkouRu7VwXKvrPvssHWK+83ZupOO3GP3dtTw+kNllLhfUnrMndBLKfCQ80Cylukw==
+  dependencies:
+    fs-extra "11.1.1"
+    js-yaml "4.1.0"
+    json-stringify-pretty-compact "4.0.0"
+    lodash.clonedeep "4.5.0"
+    lodash.isequal "4.5.0"
+    object-lib "4.0.0"
     xml-js "1.6.11"
     yaml-boost "2.0.1"
 
