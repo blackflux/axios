@@ -1,0 +1,17 @@
+[
+  {
+    "scope": "https://www.google.com:443",
+    "method": "POST",
+    "path": "/",
+    "body": "",
+    "status": 200,
+    "response": "",
+    "reqheaders": {
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json",
+      "host": "www.google.com",
+      "user-agent": "axios/0.27.2"
+    },
+    "responseIsBinary": false
+  }
+]
