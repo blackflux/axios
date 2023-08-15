@@ -1,16 +1,17 @@
 [
   {
     "scope": "https://www.google.com:443",
-    "method": "HEAD",
+    "method": "POST",
     "path": "/",
     "body": "",
     "status": 200,
     "response": "",
     "reqheaders": {
       "accept": "application/json, text/plain, */*",
-      "accept-encoding": "gzip, compress, deflate, br",
+      "content-type": "application/json",
       "host": "www.google.com",
-      "user-agent": "axios/1.4.0"
+      "user-agent": "axios/1.4.0",
+      "accept-encoding": "gzip, compress, deflate, br"
     },
     "responseIsBinary": false
   }

@@ -22,6 +22,15 @@ describe('Testing Package', {
     expect(r.status).to.equal(200);
   });
 
+  it('Testing post request without body', async () => {
+    const r = await index({
+      url: 'https://www.google.com',
+      method: 'POST',
+      qs: { bling: 'one' }
+    });
+    expect(r.status).to.equal(200);
+  });
+
   it('Testing exception format', async ({ capture }) => {
     const url = 'https://google.com/unknown';
     const r = await capture(() => index({ url, method: 'HEAD' }));
