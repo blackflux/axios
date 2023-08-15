@@ -6,7 +6,12 @@
     "body": "",
     "status": 404,
     "response": "",
-    "reqheaders": {},
+    "reqheaders": {
+      "accept": "application/json, text/plain, */*",
+      "accept-encoding": "gzip, compress, deflate, br",
+      "host": "google.com",
+      "user-agent": "axios/1.4.0"
+    },
     "responseIsBinary": false
   }
 ]
