@@ -4,6 +4,9 @@ const wrap = (v) => {
   if (typeof v !== 'function') {
     return v;
   }
+  if (Object.getOwnPropertyDescriptor(v, 'prototype')?.writable === false) {
+    return v;
+  }
   const fn = (...kwargs) => {
     const r = v(...kwargs);
     if (typeof r === 'function') {
