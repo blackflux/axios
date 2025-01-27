@@ -10,7 +10,7 @@
       "accept": "application/json, text/plain, */*",
       "accept-encoding": "gzip, compress, deflate, br",
       "host": "www.google.com",
-      "user-agent": "axios/1.4.0"
+      "user-agent": "axios/1.7.9"
     },
     "responseIsBinary": false
   }
