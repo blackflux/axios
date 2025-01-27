@@ -2,6 +2,7 @@ import { Retainer } from 'object-fields';
 import axios from 'axios';
 
 const retainer = Retainer([
+  'status',
   'code',
   'config.{headers,method,url,data}',
   'response.{headers,status,statusText,data}'
