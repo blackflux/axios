@@ -35,7 +35,7 @@ describe('Testing Package', {
     const url = 'https://google.com/unknown';
     const r = await capture(() => index({ url, method: 'HEAD' }));
     expect(JSON.parse(JSON.stringify(r))).to.deep.equal({
-      message: '',
+      message: 'Request failed with status code 404',
       name: 'Error',
       status: 404,
       config: {
