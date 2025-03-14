@@ -35,7 +35,7 @@ describe('Testing Package', {
     const url = 'https://google.com/unknown';
     const r = await capture(() => index({ url, method: 'HEAD' }));
     expect(JSON.parse(JSON.stringify(r))).to.deep.equal({
-      message: '',
+      message: 'Request failed with status code 404',
       name: 'Error',
       status: 404,
       config: {
@@ -50,8 +50,8 @@ describe('Testing Package', {
       code: 'ERR_BAD_REQUEST'
     });
     expect(abbrev(r)).to.deep.equal(
-      "{ [AxiosError] code: 'ERR_BAD_REQUEST',config:{ headers:Object [AxiosHeaders] "
-      + "{ Accept: 'application/json, text/plain, */*','Content-Type': undefined,'User-Agent': "
+      "{ [AxiosError: Request failed with status code 404] code: 'ERR_BAD_REQUEST',config:{ headers:Object "
+      + "[AxiosHeaders] { Accept: 'application/json, text/plain, */*','Content-Type': undefined,'User-Agent': "
       + "'axios/1.7.9','Accept-Encoding': 'gzip, compress, deflate, br' },url: 'https://google.com/unknown',"
       + "method: 'head',data: undefined },response: { status: 404, statusText: null, headers: Object [AxiosHeaders] {}"
       + ", data: '' },status: 404 }"
